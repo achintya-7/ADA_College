@@ -1,20 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void selectionSort(int arr[], int size) {
+void bubbleSort (int arr [], int size) {
+    int i, j;
+    
     for (int i = 0; i < size - 1; i++) {
-        int minIndex = i;
-
-        for (int j = i+1; j < size; j++) {
-            if(arr[minIndex] > arr[j]) {
-                minIndex = j;
+        // after each iteration of i, we will get max value at end
+        for (int j = i; j < size - i - 1; j++) { 
+            if (arr[j] > arr[j+1]) {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
             }
         }
-
-        int temp = arr[minIndex];
-        arr[minIndex] = arr[i];
-        arr[i] = temp;
-
     }
 
     for(int i = 0; i < size; i++) {
@@ -23,6 +21,7 @@ void selectionSort(int arr[], int size) {
     
     cout << endl;
     cout << "Complexity : O(n^2)" << endl;
+
 }
 
 int main() {
@@ -39,6 +38,5 @@ int main() {
     }
     
     size = sizeof(arr)/sizeof(int);
-    selectionSort(arr, size);
+    bubbleSort(arr, size);
 }
-
