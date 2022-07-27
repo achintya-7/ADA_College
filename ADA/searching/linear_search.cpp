@@ -34,6 +34,6 @@ int main() {
     result = linearSearch(arr, size, target);
 
     if(result != -1) {
-        cout << "Your target is at " << result+1 << "and the value is " << arr[result];
+        cout << "Your target is at position " << result+1 << " and its value is " << arr[result] << endl;
     }
 }
