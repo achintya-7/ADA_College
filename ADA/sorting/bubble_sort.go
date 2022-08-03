@@ -2,7 +2,7 @@ package main
 import "fmt"
 
 func main() {
-	arr := [] int {3, 4, 1, 544, 2}
+	arr := [] int {3, 4, 0, 544, 2}
 	fmt.Println(BubbleSort(arr))
 } 
 

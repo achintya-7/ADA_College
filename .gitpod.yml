@@ -3,7 +3,7 @@ image:
 
 tasks:
   - init: |
-      echo 'TODO: build project'
+      echo 'TODO: College Stuff'
     command: |
-      echo 'TODO: start app'
+      echo 'TODO: Do ADA or DBMS'
     
