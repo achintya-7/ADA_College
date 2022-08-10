@@ -3,6 +3,7 @@ image:
 
 tasks:
   - init: |
+      sudo apt install neofetch
       echo 'TODO: College Stuff'
     command: |
       echo 'TODO: Do ADA or DBMS'

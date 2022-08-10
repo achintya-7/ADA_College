@@ -56,7 +56,7 @@ void mergeSort(int arr [], int s, int e) {
 
 int main() {
     
-    cout << "Achintya" << " " << "A2305220450" << endl;
+    // cout << "Achintya" << " " << "A2305220450" << endl;
     // cout << "Enter size of array" << endl;
     // int i = 0;
     // int size;
@@ -69,8 +69,9 @@ int main() {
     //     cin >> arr[i];
     // }
 
-    int size = 5;
+    
     int arr[] = {23, 1, 43, 2, 11};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     cout << "Starting Sort";
     mergeSort(arr, 0, size-1);
