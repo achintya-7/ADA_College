@@ -1,5 +1,4 @@
 #include <iostream>
-#include <utility>
 using namespace std;
 
 void swap(int arr[], int a, int b) {
@@ -16,10 +15,6 @@ int helperPartition(int arr[], int s, int e) {
     if (arr[j] < pivot) {
       i++;
       swap(arr, i, j);
-      // swapping
-      // int temp = arr[i];
-      // arr[i] = arr[j];
-      // temp = arr[i];
     }
   }
   swap(arr, i+1, e);
@@ -29,7 +24,7 @@ int helperPartition(int arr[], int s, int e) {
 void quickSort(int arr[], int s, int e) {
     if (s < e) {
       int ans = helperPartition(arr, s, e);
-      quickSort(arr, s, ans-1);
+      quickSort(arr, s, ans-1); 
       quickSort(arr, ans+1, e);
     }
 }
