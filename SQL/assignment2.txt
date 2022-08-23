@@ -1,0 +1,33 @@
+Update product_master 
+set sell_price = 1150
+where description = '1.44 Floppies'
+
+delete from client_master 
+where client_no = '0001'
+
+update client_master
+set city = 'Bombay'
+where client_no = '0005'
+
+update client_master
+set bal_due = 1000
+where client_no = '0002'
+
+select * from product_master 
+where sell_price > 1500
+
+select * from client_master 
+where city like '_a%'
+
+select * from product_master
+order by description ASC
+
+select sum(reorder_lvlnumber) 
+from product_master
+
+select avg(sell_price) 
+from product_master
+
+select sum(cost_price) 
+from product_master
+
