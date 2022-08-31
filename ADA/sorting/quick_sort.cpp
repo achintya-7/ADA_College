@@ -4,7 +4,7 @@ using namespace std;
 void swap(int arr[], int a, int b) {
   int temp = arr[a];
   arr[a] = arr[b];
-  temp = arr[b];
+  arr[b] = temp;
 }
 
 int helperPartition(int arr[], int s, int e) {
